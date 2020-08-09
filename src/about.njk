@@ -10,4 +10,9 @@ layout: base.njk
         <h2 class="jams"> ...</h2>
     </div>
 </div>
-<script src="js/vibe.js"></script>
+
+{% for item in news %}
+  <a href="/{{ item.country}}">{{ item.country }}</a>
+{%  endfor %}
+
+<script src="/js/vibe.js"></script>
